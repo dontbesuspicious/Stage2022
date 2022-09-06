@@ -5,8 +5,8 @@ sys.setrecursionlimit(10000)
 
 #from itertools import combinations
 
-l = 4 #= int(input('donnez la largeur du terrain'))
-h = 4 #= int(input('donnez la hauteur du terrain'))
+l = int(input('donnez la largeur du terrain'))
+h = int(input('donnez la hauteur du terrain'))
 
 def fausse_strategie(etat) :
     return etat
@@ -28,8 +28,6 @@ for i in range (1,l+1) :
 print(len(Q))
 
 l,ok=detection_cycle([Q[6]],strategie,G)
-
-print("KWA")
 
 if ok :
     print ('strat fausse')
